@@ -1,0 +1,1 @@
+// finds foods that fit the macro needs ie. 1/2 c rice = 40g carbs 10oz cook chicken = 60g protein. 

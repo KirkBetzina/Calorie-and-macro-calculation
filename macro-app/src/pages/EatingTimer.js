@@ -1,0 +1,1 @@
+// display the Alarm settings and on/ off switch

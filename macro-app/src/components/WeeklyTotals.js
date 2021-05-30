@@ -1,0 +1,1 @@
+// weekly macros, calories, number of days hit target shown in % compared to goal. Show in nutrition history, single day.
