@@ -3,9 +3,9 @@
 ## Project Links
 - [UX/UI COMP](https://www.behance.net/gallery/117398245/Fitmate-UIUX-Design-Process?tracking_source=search_projects_recommended%7Cfitness)
 
-- [API URL with key]()
+- [API URL](https://spoonacular.com/food-api)
 
-- [ Frontend github repo link]()
+- [Frontend github repo link]()
 - [Frontend deployment link]()
 
 - [ Backend github repo link]()
