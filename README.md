@@ -14,8 +14,8 @@ BMR = 2,534 calories
 Now here's where the math comes in and it's pretty cool. 
 
 I personally like:
-- 65% of my calories to come from protein
-- 30% of my calories to come from carbs
+- 60% of my calories to come from protein
+- 35% of my calories to come from carbs
 - and the remaining fats % is naturally occuring in meats. So I don't typically add fats to my meals. 
 
 - .60 x 2543 calories = 1526 calories protein
