@@ -1,5 +1,5 @@
 // track manually entered foods.
-
+import React from "react"
 import FoodFinder from "./FoodFinder"
 
 const FoodTracker = (props) => { 
