@@ -19,14 +19,15 @@ const BmrCalculator = (props) => {
                     <label for=''>Enter age in years:</label>
                     <input type='text' id='age' value=''size='20'placeholder='Enter age in years' name='age' required></input>
                    <br></br>
-                    <input type='reset' value='reset'></input>
-                    <input type='button' value='calculate BMR' onClick={calcBMR()} id='calc'></input>
+                    
+                    <input type='button' value='calculate BMR'  id='calc'></input>
                    <br></br>
                     <label for=''>BMR: </label>
-                    <input type='text' value=''size='20'placeholder='result - bmr' name='bmr' id='bmr' readOnly></input>
+                    
 
                </fieldset>
            </form>
         </div>
     )
 }
+export default BmrCalculator 
