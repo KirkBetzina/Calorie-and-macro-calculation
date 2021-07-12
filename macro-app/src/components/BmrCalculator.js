@@ -8,9 +8,9 @@ const BmrCalculator = (props) => {
     const [bmr, setBMR] = useState(0)
 
     const [formData, setFormData] = useState({
-        weight: null, 
-        height: null, 
-        age: null
+        weight: '', 
+        height: '', 
+        age: ''
     })
 
     const handleChange = (e) => { 
