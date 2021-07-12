@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 const BmrCalculator = (props) => {
     // const menBmr = 88.362 +(13.397 * (formData.weight))+(4.799 * (formData.height))-(5.677 * (formData.age))
-    const womanBmr = 447.593 + (9.247 * ('weight in kg')) + (3.098 * ('height in cm')) - (4.330 * ('age in years'))
+    // const womanBmr = 447.593 + (9.247 * ('weight in kg')) + (3.098 * ('height in cm')) - (4.330 * ('age in years'))
 
     const [bmr, setBMR] = useState(0)
 
@@ -22,8 +22,15 @@ const BmrCalculator = (props) => {
     }
 
     const handleSubmit = () => { 
+        if (document.getElementById("Female").checked){
+            const womanBmr = 447.593 + (9.247 * (formData.weight)) + (3.098 * (formData.height)) - (4.330 * (formData.age))
+            setBMR(Math.round(womanBmr))
+        }
+        else if (document.getElementById("Male").checked){
         const menBmr = 88.362 +(13.397 * (formData.weight))+(4.799 * (formData.height))-(5.677 * (formData.age))
-        setBMR(menBmr)
+        setBMR(Math.round(menBmr))
+        }
+        console.log(bmr)
     }
 
     return (
@@ -33,16 +40,16 @@ const BmrCalculator = (props) => {
            <form method='post' action='#' name='bmrform'>
                <fieldset>
                    <legend>BMR CALCULATOR</legend>
-                   <label for='weight'>enter weight in kgs:</label>
-                   <input onChange={handleChange} type='number' id='weight' value={formData.weight} size='20' placeholder='Enter weight in kgs' name='weight' required></input>
+                   <label for='weight'>Weight:</label>
+                   <input onChange={handleChange} type='number' id='weight' value={formData.weight} size='20' placeholder='kilograms' name='weight' required></input>
                    <br></br>
-                    <label for='height'>Enter height in cms:</label>
-                    <input onChange={handleChange} type='number' id='height' value={formData.height}size='20'placeholder='Enter height in cms' name='height' required></input>
+                    <label for='height'>Height:</label>
+                    <input onChange={handleChange} type='number' id='height' value={formData.height}size='20'placeholder='centimeters' name='height' required></input>
                    <br></br>
-                    <label for='age'>Enter age in years:</label>
-                    <input onChange={handleChange} type='number' id='age' value={formData.age}size='20'placeholder='Enter age in years' name='age' required></input>
+                    <label for='age'>Age:</label>
+                    <input onChange={handleChange} type='number' id='age' value={formData.age}size='20'placeholder='years' name='age' required></input>
                    <br></br>
-                   <input type="checkbox" id="Female" name="Female" ></input>
+                    <input type="checkbox" id="Female" name="Female" ></input>
                     <label for="Female">Female</label>
                     <br></br>
                     <input type="checkbox" id="Male" name="Male" ></input>
@@ -50,7 +57,7 @@ const BmrCalculator = (props) => {
                     <br></br>
                     <input type='button' value='calculate BMR'  id='calc' onClick={handleSubmit}></input >
                    <br></br>
-                    <label for='button'>BMR: {bmr} </label>
+                    <label for='button'>BMR: {bmr} Calories/day</label>
                     
 
                </fieldset>
