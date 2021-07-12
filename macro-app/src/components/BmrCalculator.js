@@ -42,6 +42,12 @@ const BmrCalculator = (props) => {
                     <label for='age'>Enter age in years:</label>
                     <input onChange={handleChange} type='number' id='age' value={formData.age}size='20'placeholder='Enter age in years' name='age' required></input>
                    <br></br>
+                   <input type="checkbox" id="Female" name="Female" ></input>
+                    <label for="Female">Female</label>
+                    <br></br>
+                    <input type="checkbox" id="Male" name="Male" ></input>
+                    <label for="Male">Male</label>
+                    <br></br>
                     <input type='button' value='calculate BMR'  id='calc' onClick={handleSubmit}></input >
                    <br></br>
                     <label for='button'>BMR: {bmr} </label>
