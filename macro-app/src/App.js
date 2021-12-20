@@ -7,8 +7,6 @@ function App() {
   return (
     <div className="App">
       <SplashPage />
-    {/* <CreateAccountForm />
-    <BmrCalculator /> */}
     </div>
   );
 }
