@@ -2,7 +2,9 @@ import React from 'react'
 import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 
 const CreateAccountForm = (props) => {
-    return( <div>
+    return( 
+      <div>
+
         <h1>this is the create account form</h1>
         <InputGroup>
         <InputGroupAddon addonType="prepend">
@@ -29,6 +31,7 @@ const CreateAccountForm = (props) => {
         <Input placeholder="Check it out" />
       </InputGroup>
       <br />
+      <BmrCalculator /> 
     </div>
     )
 }
